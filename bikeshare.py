@@ -22,7 +22,7 @@ def get_filters():
     city = str(input("Enter the name of the city you wish to analyze (Chicago/New York/Washington) :"))
     city = city.lower()
     while city not in ('chicago','new york','washington'):
-        city = str(input("Please enter a valid city name (Chicago/New York/Washington) :"))
+        city = str(input("Invalid input: Please enter a valid city name (Chicago/New York/Washington) :"))
         city = city.lower()
 
     print('\nGreat! You chose {}.\n'.format(city.title()))
@@ -33,7 +33,7 @@ def get_filters():
     filter_by = str(input("Do you wish to filter by month, day, both, or not at all? (month/day/both/none) :"))
     filter_by = filter_by.lower()
     while filter_by not in ('month','day','both','none'):
-        filter_by = str(input("Please enter a valid filter (month/day/both/none) :"))
+        filter_by = str(input("Invalid input: Please enter a valid filter (month/day/both/none) :"))
         filter_by = filter_by.lower()
 
 
@@ -43,14 +43,14 @@ def get_filters():
        month = str(input("Please enter the name of the month to filter by (january, february, ... , june): "))
        month = month.lower()
        while month not in ('january','february','march','april','may','june'):
-           month = str(input("Please enter a month (january, february, ... , june): "))
+           month = str(input("Invalid input: Please enter a month (january, february, ... , june): "))
            month = month.lower()
 
        # get day input
        day = str(input("Please enter the day of the week to filter by (monday, tuesday, ... sunday): "))
        day = day.lower()
        while day not in ('monday','tuesday','wednesday','thursday','friday','saturday', 'sunday'):
-           day = str(input("Please enter a valid day of the week (monday, tuesday, ... sunday): "))
+           day = str(input("Invalid input: Please enter a valid day of the week (monday, tuesday, ... sunday): "))
            day = day.lower()
 
        print("\nThe results will be shown for {} and {}.\n".format(month.title(), day.title()))
@@ -61,7 +61,7 @@ def get_filters():
         month = str(input("Please enter the name of the month to filter by (january, february, ... , june): "))
         month = month.lower()
         while month not in ('january','february','march','april','may','june'):
-            month = str(input("Please enter a month (january, february, ... , june): "))
+            month = str(input("Invalid input: Please enter a month (january, february, ... , june): "))
             month = month.lower()
         print("\nThe results will be shown for {}.\n".format(month.title()))
         day = 'all'
@@ -75,7 +75,7 @@ def get_filters():
         day = str(input("Please enter the day of the week to filter by (monday, tuesday, ... sunday): "))
         day = day.lower()
         while day not in ('monday','tuesday','wednesday','thursday','friday','saturday', 'sunday'):
-            day = str(input("Please enter the day of the week (monday, tuesday, ... sunday): "))
+            day = str(input("Invalid input: Please enter the day of the week (monday, tuesday, ... sunday): "))
             day = day.lower()
         print("\nThe results will be shown for {}.\n".format(day.title()))
 
