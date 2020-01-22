@@ -10,7 +10,7 @@ Describe what your project is about and what it does
 ### Files used
 washington.csv
 new_york_city.csv
-chicago.csv 
+chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Inspired by Richard from Udacity.
